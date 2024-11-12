@@ -5,7 +5,8 @@ const bcrypt = require('bcryptjs');
 const path = require('path');
 
 // Firebase Admin setup
-const serviceAccountPath = path.resolve(__dirname, '../config/firebaseConfig.json');
+const serviceAccountPath = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+//path.resolve(__dirname, '../config/firebaseConfig.json');
 
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(require(serviceAccountPath))
