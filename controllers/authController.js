@@ -9,7 +9,7 @@ const serviceAccountPath = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 //path.resolve(__dirname, '../config/firebaseConfig.json');
 
 firebaseAdmin.initializeApp({
-  credential: firebaseAdmin.credential.cert(require(serviceAccountPath))
+  credential: firebaseAdmin.credential.cert(serviceAccountPath)
 });
 
 const db = firebaseAdmin.firestore(); // Initialize Firestore
