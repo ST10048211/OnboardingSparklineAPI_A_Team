@@ -29,14 +29,23 @@ This project is a Node.js backend application that integrates Firebase for user 
 ## Project Structure
 
 OnboardingSparklineAPI_A_Team/
+
 ├── app.js                   # Main application file
+
 ├── routes/
+
 │   └── authRoutes.js        # Authentication routes
+
 ├── controllers/
+
 │   └── authController.js    # Authentication logic
+
 ├── certificates/
+
 │   └── serviceAccountKey.json # Firebase Service Account Key
+
 ├── package.json             # Project dependencies and scripts
+
 ├── .env                     # Environment variables` 
 
 <p align="right">(<a href="#table-of-contents">back to top</a>)</p>
