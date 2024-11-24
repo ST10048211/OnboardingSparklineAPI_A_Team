@@ -51,7 +51,7 @@ OnboardingSparklineAPI_A_Team/
     {
       "email": "user@example.com",
       "password": "password123"
-    }`
+    }
     ```
     
 -   **Response**:
